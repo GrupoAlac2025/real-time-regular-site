@@ -705,7 +705,7 @@
     if (cfg.showWeatherTemp !== false) {
       var isF = unit === 'fahrenheit';
       var val = w ? (isF ? w.tempF : w.tempC) : null;
-      parts.push('<span class="w-tp">' + (val != null ? Math.round(val) + '°' + (isF ? 'F' : 'C') : '--°') + '</span>');
+      parts.push('<span class="w-tp">' + (val != null ? Math.round(val) + '°' : '--°') + '</span>');
     }
     if (cfg.showWeatherCity !== false) parts.push('<span class="w-ct">' + (city ? esc(city) : '') + '</span>');
     if (cfg.showWeatherCondition !== false) parts.push('<span class="w-cn">' + (w && w.text ? esc(w.text) : '') + '</span>');
@@ -970,7 +970,7 @@
                 var val = cell ? (cell.f !== undefined ? cell.f : (cell.v !== null ? cell.v : "")) : "";
                 if (col && col.label) {
                   if (col.label === "Foto" && typeof val === "string" && val.indexOf("drive.google.com") !== -1) {
-                    var match = val.match(/id=([^&]+)/) || val.match(/file/d/([^/]+)/);
+                    var match = val.match(/id=([^&]+)/) || val.match(new RegExp("file/d/([^/]+)"));
                     if (match && match[1]) {
                       val = "https://lh3.googleusercontent.com/d/" + match[1];
                     }
