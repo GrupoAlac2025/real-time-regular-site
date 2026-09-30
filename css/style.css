@@ -1,0 +1,87 @@
+/* ============================================================
+   Real Time Ad - Real Time Regular
+   Generado con el Builder de Real Time Ads
+   ============================================================ */
+
+
+@font-face {
+  font-family: 'Anton-Regular';
+  src: url('https://storage.googleapis.com/media_files_contents_qa/realtime/p_muokdpdlo8gehu/1790800639801_anton-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #000;
+}
+
+#stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center center;
+  overflow: hidden;
+  background: #000000;
+}
+
+#bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.bg-item {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.bg-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#layers {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.el {
+  position: absolute;
+}
+
+.el-inner {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-variant-numeric: tabular-nums;
+}
+
+.el-inner img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cd-b { display: inline-block; text-align: center; margin: 0 6px; }
+.cd-n { display: block; }
+.cd-l { display: block; font-size: 0.32em; opacity: 0.85; letter-spacing: 2px; margin-top: 2px; }
+.cd-s { display: inline-block; opacity: 0.6; margin: 0 2px; vertical-align: 0.1em; }
+
+.w-ic, .w-tp, .w-ct, .w-cn { display: inline-block; vertical-align: middle; margin-right: 10px; }
